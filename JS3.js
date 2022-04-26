@@ -1,72 +1,60 @@
-console.log("Working...")
+console.log("Working");
 
-// Boolean - (True /False), Strings - (Words, sentence, mix of numbers and words(ex - address)), Number - (integer and decimal values), 2 ,4, 101, 23.50, 34.99 
+//Arithmetic Operators
+//+, -, /, *, %
 
-"2, somelane, somecity - 711101"
-'2, somelane, somecity - 711101'
-"SIdhant", "907654321"
+//modulas - It gives us the remainder
+console.log(2 + 3);
+console.log(2 - 3);
+console.log(2 * 3);
+console.log(2 / 3);
+console.log(2 % 3);
 
-// data types present in JS(Primitive)
-// WHat are Boolean Values - It has only two values True/False
+//comparision operators
+//==/!= only check the values and not the data types but ===/!== checks both the values and the datatypes
 
-// What are Strings - Anything which is present inside the double quotes or the single  quotes are called as strings
+//< , > , <=, >=, ==, ===
+console.log(2<3);//true(boolean values as answer)
+//console.log(2>3);//false
+//console.log(2>=3);//false
+//console.log(2<=3);//true
 
-// Numbers - includes Integer and decimal values (2/3/34.66/99.99)
+console.log(2!=3);//false
+console.log(2!=2);//false
+console.log(2!==2);//false
+console.log(2==2);//true
+console.log(2===2);//true
+console.log(2=="2");//true
+console.log(2==="2");//false
+//Logical operators
+//||, &&, !
+console.log(2||3);//2
+console.log(0||3);//3
+console.log(0||0);//0
 
-// Variables - They are used to store the values which could be of any type i.e. Number type or String Type or Boolean type.
+console.log(1 && 3);//3
+console.log(0 && 3);//0
+console.log(1 && 0);//0
 
-// rules for assigning names to variables
-// try to make the variables name declarative
-// it uses Camel Case
-// Variable names are case sensitive 
+console.log(!0)//true
+console.log(!1)//false
+console.log(!2)//false
 
-// fName, fname, Fname, fnAme, fnaMe, 
+//increment decrement operators
 
-// Keywords are of three types
-// let, var, const
+let a = 1;
+a++;//a = a+1
+console.log(a);//2
+a--;//a = a-1
+console.log(a);//1
+//a = 1
+console.log(a++);//1//i will first print the value of a, and then increment its value with 1 which will be reflected/shown in next line,not on the same line
+console.log(a);//2
 
-// -----declaraing / initializing/ redeclaring----
-
-// let - These keywords are used to as
-// let - These keywords are used to assign variables with values
-// 1 . They can be declared in a line and then initialized with a value in anaother lines.
-// 2. They can be also declared and initialized in the same line
-// 3 . They cannot be redeclared.....But can be reinitialized....
-// 4. ***We cannot have Two Variables with same name in Let**
-
-let fName = "Sidhant";//declared and initialized in the same line
-let fname;
-fname = "Lakhi";
-console.log(fname);
-fname = "Lakhwinder";
-console.log(fname);
-
-// const - These keywords are used to assign variables with values
-// 1. They can be declared and initialized in the same line only.
-// 2 . They cannot be redeclared.....
-// 3. But const "cant" be reinitialized also....
-// 4. ***We cannot have Two Variables with same name in const**
-
-const lname = "Gupta";
-// lname = "Vinci";
-console.log(lname);
-
-// var - These keywords are used to assign variables with values
-// 1 . They can be declared in a line and then initialized with a value in another line
-// var - These keywords are used to assign variables with values
-// 1 . They can be declared in a line and then initialized with a value in another lines.
-// 2. They can be also declared and initialized in the same line
-// 3. They can be redeclared.....and also can be reinitialized....
-// 4. ***We can have Two or more Variables with same name in Var**
-
-var age = 25;
-// console.log(age);
-
-var age;
-age = 26;
-// console.log(age);
-age = 27;
-console.log(age);
-
-var age = 29;
-console.log(age);
+console.log(a--);//1//i will first print the value of a, and then increment its value with 1 which will be reflected/shown in next line,not on the same line
+console.log(a);//0
+let b = 2;
+a*=3; // b=b*3
+b/=3; // b = b/3;
+b+=2;// b = b+2;
+b-=4;//b = b-4;
